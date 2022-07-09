@@ -1,0 +1,28 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron src/index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -mwl"
+  },
+  "build": {
+    "appId": "ru.khanchenkov.notedly",
+    "productName": "Notedly",
+    "directories": {
+      "buildResources": "resources"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.7",
+    "electron-builder": "^23.1.0"
+  },
+  "dependencies": {
+    "electron-util": "^0.17.2"
+  }
+}
